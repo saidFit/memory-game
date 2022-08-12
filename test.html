@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorie Game</title>
+    <!------Links  ------->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+</head>
+<body>
+    <div class="container-all">
+      <div class="container-items">
+       <article>
+
+        <div class="container">
+            <div>
+                <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-1.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div>
+             <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-2.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+                 <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-3.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+               <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-4.png" alt="">
+            </div>
+        </div>
+
+        
+       </article>
+       <article>
+
+        <div class="container">
+            <div>
+                <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-1.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div>
+             <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-2.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+                 <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-3.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+               <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-4.png" alt="">
+            </div>
+        </div>
+
+        
+       </article>
+       <article>
+
+        <div class="container">
+            <div>
+                <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-1.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div>
+             <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-2.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+                 <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-3.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+               <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-4.png" alt="">
+            </div>
+        </div>
+
+        
+       </article>
+       <article>
+
+        <div class="container">
+            <div>
+                <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-1.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div>
+             <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-2.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+                 <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-3.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div>
+               <p class="Front">?</p>
+            </div>
+            <div>
+                <img class="img-png" src="img-4.png" alt="">
+            </div>
+        </div>
+
+        
+       </article>
+
+     
+
+     <article class="footer">
+        <div>
+            <p>Time:<span class="time">30s</span> </p>
+        </div>
+        <div>
+            <p>Flips: <span class="flips">0</span> </p>
+        </div>
+        <div>
+       <button class="Resreshe">Run</button>      
+        </div>
+       
+     </article>
+
+    </div>
+  
+  
+    <!-------script..-------->
+    <script>
+
+const allDiv = document.querySelectorAll('.container')
+console.log(allDiv)
+const tim = document.querySelector('.time')
+const flips = document.querySelector('.flips')
+
+let arrayNumber = [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]
+
+let imgOne,imgTwo;
+
+
+function checked(e){
+   
+e.target.classList.add('Rotate')
+const img = e.target.querySelector('.img-png')
+// console.log(img)
+if(!imgOne){
+   imgOne=img  
+  console.log(imgOne)
+  return;
+}else{
+    if(!imgTwo){
+    imgTwo=img
+    console.log(imgTwo)
+    } 
+}
+
+trueFalse()
+
+}
+
+function random (){
+
+    console.log(arrayNumber.sort(function(){
+        return 0.5 - Math.random();
+    }))
+    for(let i=0;i<allDiv.length;i++){
+         allDiv[i].querySelector('.img-png').src=`img-${arrayNumber[i]}.png`
+
+        }
+}
+random()
+
+
+
+
+function trueFalse(){
+    if(imgOne.src==imgTwo.src){
+        console.log(true)
+        imgOne=''
+        imgTwo=''
+        return;
+    }else{
+
+        const ParentimgOne=imgOne.parentElement.parentElement
+        const ParentimgTwo=imgTwo.parentElement.parentElement
+        for(let i=0;i<allDiv.length;i++){
+            if(!allDiv[i].classList.contains('Rotate')){
+              allDiv[i].classList.add('disabled')
+              setTimeout(() => {
+                allDiv[i].classList.remove('disabled')
+              }, 1400);
+            }
+        }     
+        setTimeout(() => {
+            ParentimgOne.classList.add('shake')
+            ParentimgTwo.classList.add('shake')}, 900);
+
+        setTimeout(() => {
+        ParentimgOne.classList.remove('shake','Rotate')
+        ParentimgTwo.classList.remove('shake','Rotate')
+        imgOne=''
+        imgTwo=''
+        
+    }, 1400); 
+       
+   
+   
+       
+    }
+
+
+}
+
+
+allDiv.forEach((items,index)=>{
+    items.addEventListener('click',checked)
+})
+
+
+    </script>
+</body>
+</html>

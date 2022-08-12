@@ -1,0 +1,68 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array Sort</h2>
+    <p>Click the button (again and again) to sort the array in random order.</p>
+    
+    <button >Try it</button>
+    <p id="demo"></p>
+    
+    <script>
+    const points = [40, 100, 1, 5, 25, 10];
+
+   function myFunction(){
+    points.sort(function(){
+        return 0.5 - Math.random();
+    })
+    
+    demo.innerHTML=points
+   }
+
+    window.addEventListener('load',myFunction)
+
+
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <input id="text" type="text"  onchange="change(this)">
+<input id="text" type="text"  oninput="chang(this)" placeholder="enter"> -->
+<!-- <input id="range" type="range"  onchange="change(this)" > -->
+<input  type="text" name="text"  onblur="blurMY(this)" onfocus="focusMY(this)"   placeholder="enter" >
+<!-- <button onclick="moi(this)">click here Please</button> -->
+
+
+
+<script>
+function blurMY(input){
+  console.log(input.style.backgroundColor='green')
+}
+function focusMY(input){
+  console.log(input.style.background='yellow')
+}
+// function chang(input){
+//   console.log(input.value)
+// }
+// function moi(button){
+//   console.log(button)
+// }
+</script>
+</body>
+</html>
